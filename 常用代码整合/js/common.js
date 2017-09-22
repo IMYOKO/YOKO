@@ -115,9 +115,19 @@ function pushHistory() {
 	window.history.pushState(state, "title", "");
 };
 
-//点击页面跳到某个地方
-function gotoFun(obj,height){
+//点击页面元素跳到某个地方
+/*
+ * obj 节点
+ * height  跳到元素距离顶部高度  当height==0时，就是返回顶部的功能
+ * time  到达时间
+ */
+function gotoFun(obj,height,time){
 	$(obj).click(function () {
-		$('html,body').animate({scrollTop:height},500);
+		$('html,body').animate({scrollTop:height},time);
 	})
 }
+
+//获取页面滚动距离
+$(window).scroll(function(){
+	var height = $(window).scrollTop();
+});
