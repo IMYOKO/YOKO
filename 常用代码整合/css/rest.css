@@ -24,9 +24,13 @@
 	height: 0px;
 	visibility: hidden;
 }
+.clear {
+  clear: both;
+}
 
-/*  超过显示...  */
+/*  超过100px显示...  */
 .text-overflow {
+	width: 100px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
