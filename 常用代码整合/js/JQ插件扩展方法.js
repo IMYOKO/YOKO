@@ -10,11 +10,11 @@
 	addColor:function(options){
 	    let len = arguments.length;
 	    if(len==0){
-		 let color = $(this).css('color');
-		 $(this).html('颜色是：'+color);
+		   let color = $(this).css('color');
+		   $(this).html('颜色是：'+color);
 	    }else{
-		 $(this).css('color',options);
-		 $(this).html('颜色是：'+options);
+		   $(this).css('color',options);
+		   $(this).html('颜色是：'+options);
 	    }
 	}
     })
@@ -26,18 +26,18 @@
     $.extend({
 	errorMsg:function(options){
 	    let html =	$('<div class="tkbox error_bomb">'+
-			    '<div class="popup_bg"></div>'+
-			    '<div class="addgb">'+
-				'<div class="kuang2">'+
-				    '<div class="tbpad">'+
-					'<p class="k_tit bomb_error_msg" id="k_tit_dbqg"></p>'+
-				    '</div>'+
-				    '<div class="tkone">'+
-					'<input type="button" value="" class="kque error_bomb_confirm" >'+
-				    '</div>'+
-				'</div>'+
-			    '</div>'+
-			'</div>');
+					    '<div class="popup_bg"></div>'+
+					    '<div class="addgb">'+
+						'<div class="kuang2">'+
+						    '<div class="tbpad">'+
+							'<p class="k_tit bomb_error_msg" id="k_tit_dbqg"></p>'+
+						    '</div>'+
+						    '<div class="tkone">'+
+							'<input type="button" value="" class="kque error_bomb_confirm" >'+
+						    '</div>'+
+						'</div>'+
+					    '</div>'+
+					'</div>');
 	    html.appendTo("body");
 	    let error_bomb = $('.error_bomb');
 	    let error_bomb_confirm = $('.error_bomb_confirm');
