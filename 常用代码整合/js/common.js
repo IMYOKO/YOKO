@@ -123,7 +123,7 @@ function pushHistory() {
  */
 function gotoFun(obj,height,time){
     $(obj).click(function () {
-	$('html,body').animate({scrollTop:height},time);
+		$('html,body').animate({scrollTop:height},time);
     })
 }
 
