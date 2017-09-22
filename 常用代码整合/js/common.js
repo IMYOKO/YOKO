@@ -39,18 +39,18 @@ function accSub(num1,num2){
 
 //精确乘法
 function accMul(arg1,arg2){
-	var m=0,s1=arg1.toString(),s2=arg2.toString();
-	try{
-		m+=s1.split(".")[1].length;
-	}catch(e){
-		
-	}
-	try{
-		m+=s2.split(".")[1].length;
-	}catch(e){
-		
-	}
-	return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m);
+    var m=0,s1=arg1.toString(),s2=arg2.toString();
+    try{
+	m+=s1.split(".")[1].length;
+    }catch(e){
+	
+    }
+    try{
+	m+=s2.split(".")[1].length;
+    }catch(e){
+	
+    }
+    return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m);
 }
 
 //精确除法
@@ -75,44 +75,44 @@ function accDiv(arg1,arg2){
 
 //保留n位小数
 function getFloat(number, n) {
-	n = n ? parseInt(n) : 0;
-	if (n <= 0) return Math.round(number);
-	number = Math.round(number * Math.pow(10, n)) / Math.pow(10, n);
-	return number;
+    n = n ? parseInt(n) : 0;
+    if (n <= 0) return Math.round(number);
+    number = Math.round(number * Math.pow(10, n)) / Math.pow(10, n);
+    return number;
 };
 
 //判断坏数字
 function badFloat(num, size) {
-	if(isNaN(num)) return true;
+    if(isNaN(num)) return true;
 	num += '';
-	if(-1 == num.indexOf('.')) return false;
-	var f_arr = num.split('.');
-	if(f_arr[1].length > size) {
-		return true;
-	}
-	return false;
+    if(-1 == num.indexOf('.')) return false;
+    var f_arr = num.split('.');
+    if(f_arr[1].length > size) {
+	return true;
+    }
+    return false;
 }
 
 //输入不是数字
 function notNum(o, len) {
-	if(isNaN($(o).val())) $(o).val("");
-	var value = len ? formatfloat($(o).val(), len, 0) : parseInt($(o).val());
-	if(badFloat($(o).val(), len)) $(o).val(value);
+    if(isNaN($(o).val())) $(o).val("");
+    var value = len ? formatfloat($(o).val(), len, 0) : parseInt($(o).val());
+    if(badFloat($(o).val(), len)) $(o).val(value);
 }
 
 //移动端返回前到固定一页
 pushHistory(); 
 window.addEventListener("popstate", function(e) {
-	var coinname =$('#coinname').val();
-	var href = "您的返回页面地址.html";
-	window.location.href=href;
+    var coinname =$('#coinname').val();
+    var href = "您的返回页面地址.html";
+    window.location.href=href;
 }, false);
 function pushHistory() {
-	var state = {
-		title: "title",
-		url: ""
-	};
-	window.history.pushState(state, "title", "");
+    var state = {
+	title: "title",
+	url: ""
+    };
+    window.history.pushState(state, "title", "");
 };
 
 /*
@@ -122,12 +122,12 @@ function pushHistory() {
  * time  到达时间
  */
 function gotoFun(obj,height,time){
-	$(obj).click(function () {
-		$('html,body').animate({scrollTop:height},time);
-	})
+    $(obj).click(function () {
+	$('html,body').animate({scrollTop:height},time);
+    })
 }
 
 //获取页面滚动距离
 $(window).scroll(function(){
-	var height = $(window).scrollTop();
+    var height = $(window).scrollTop();
 });
