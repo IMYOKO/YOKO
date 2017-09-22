@@ -23,33 +23,33 @@
 
 //  jQuery.extend();
 (function($) {
-	$.extend({
-		errorMsg:function(options){
-			let html =	$('<div class="tkbox error_bomb">'+
-						    '<div class="popup_bg"></div>'+
-						    '<div class="addgb">'+
-						        '<div class="kuang2">'+
-						            '<div class="tbpad">'+
-						                '<p class="k_tit bomb_error_msg" id="k_tit_dbqg"></p>'+
-						            '</div>'+
-						            '<div class="tkone">'+
-						                '<input type="button" value="" class="kque error_bomb_confirm" >'+
-						            '</div>'+
-						        '</div>'+
-						    '</div>'+
-						'</div>');
-			html.appendTo("body");
-			let error_bomb = $('.error_bomb');
-			let error_bomb_confirm = $('.error_bomb_confirm');
-			$('.bomb_error_msg').text(options);
-			error_bomb_confirm.val('确定');
-			error_bomb_confirm.click(function(){
-				error_bomb.remove();
-			});
-		},
-		add:function(a,b){
-			return a+b;
-		}
-	});
+    $.extend({
+	errorMsg:function(options){
+	    let html =	$('<div class="tkbox error_bomb">'+
+			    '<div class="popup_bg"></div>'+
+			    '<div class="addgb">'+
+				'<div class="kuang2">'+
+				    '<div class="tbpad">'+
+					'<p class="k_tit bomb_error_msg" id="k_tit_dbqg"></p>'+
+				    '</div>'+
+				    '<div class="tkone">'+
+					'<input type="button" value="" class="kque error_bomb_confirm" >'+
+				    '</div>'+
+				'</div>'+
+			    '</div>'+
+			'</div>');
+	    html.appendTo("body");
+	    let error_bomb = $('.error_bomb');
+	    let error_bomb_confirm = $('.error_bomb_confirm');
+	    $('.bomb_error_msg').text(options);
+	    error_bomb_confirm.val('确定');
+	    error_bomb_confirm.click(function(){
+	        error_bomb.remove();
+	    });
+	},
+	add:function(a,b){
+	    return a+b;
+	}
+    });
 })(jQuery);
 //调用方式   $.errorMsg('请输入数字');
