@@ -81,7 +81,6 @@ function getFloat(number, n) {
 	return number;
 };
 
-
 //判断坏数字
 function badFloat(num, size) {
 	if(isNaN(num)) return true;
@@ -100,3 +99,18 @@ function notNum(o, len) {
 	var value = len ? formatfloat($(o).val(), len, 0) : parseInt($(o).val());
 	if(badFloat($(o).val(), len)) $(o).val(value);
 }
+
+//移动端返回前到固定一页
+pushHistory(); 
+window.addEventListener("popstate", function(e) {
+	var coinname =$('#coinname').val();
+	var href = "您的返回页面地址.html";
+	window.location.href=href;
+}, false);
+function pushHistory() {
+	var state = {
+		title: "title",
+		url: ""
+	};
+	window.history.pushState(state, "title", "");
+};
