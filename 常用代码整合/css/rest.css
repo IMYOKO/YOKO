@@ -14,7 +14,7 @@ input[type="submit"], input[type="text"], input[type="password"], input[type="nu
 ::-webkit-input-placeholder{font-family:"microsoft yahei"; color: #999999;}
 :-moz-placeholder{font-family:"microsoft yahei"; color: #999999;}
 ::-moz-placeholder{font-family:"microsoft yahei"; color: #999999;}
-  :-ms-input-placeholder{font-family:"microsoft yahei"; color: #999999;}
+:-ms-input-placeholder{font-family:"microsoft yahei"; color: #999999;}
 img,button{ border:0; outline: 0;}
 header,section,footer {  display: block; }
 sumbit{display:none;}
