@@ -114,3 +114,10 @@ function pushHistory() {
 	};
 	window.history.pushState(state, "title", "");
 };
+
+//点击页面跳到某个地方
+function gotoFun(obj,height){
+	$(obj).click(function () {
+		$('html,body').animate({scrollTop:height},500);
+	})
+}
