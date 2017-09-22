@@ -47,3 +47,11 @@ a:hover{ text-decoration:none;}
 .clear {
   clear: both;
 }
+
+
+/*超过显示...*/
+.text-overflow {
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
