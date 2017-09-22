@@ -115,8 +115,8 @@ function pushHistory() {
 	window.history.pushState(state, "title", "");
 };
 
-//点击页面元素跳到某个地方
 /*
+ * 点击页面元素跳到某个地方
  * obj 节点
  * height  跳到元素距离顶部高度  当height==0时，就是返回顶部的功能
  * time  到达时间
