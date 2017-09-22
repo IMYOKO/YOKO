@@ -3,38 +3,38 @@
  */
 
 //加法浮点
-function accAdd(num1,num2){  
-    var r1,r2,m;  
-    try{  
-        r1 = num1.toString().split('.')[1].length;  
-    }catch(e){  
-        r1 = 0;  
-    }  
-    try{  
-        r2=num2.toString().split(".")[1].length;  
-    }catch(e){  
-        r2=0;  
-    }  
+function accAdd(num1,num2){
+    var r1,r2,m;
+    try{
+        r1 = num1.toString().split('.')[1].length;
+    }catch(e){
+        r1 = 0;
+    }
+    try{
+        r2=num2.toString().split(".")[1].length;
+    }catch(e){
+        r2=0;
+    }
     m=Math.pow(10,Math.max(r1,r2));
-    return Math.round(num1*m+num2*m)/m;  
+    return Math.round(num1*m+num2*m)/m;
 }
 
 //减法浮点
-function accSub(num1,num2){  
-    var r1,r2,m;  
-    try{  
-        r1 = num1.toString().split('.')[1].length;  
-    }catch(e){  
-        r1 = 0;  
-    }  
-    try{  
-        r2=num2.toString().split(".")[1].length;  
-    }catch(e){  
-        r2=0;  
-    }  
-    m=Math.pow(10,Math.max(r1,r2));  
-    n=(r1>=r2)?r1:r2;  
-    return (Math.round(num1*m-num2*m)/m).toFixed(n);  
+function accSub(num1,num2){
+    var r1,r2,m;
+    try{ 
+        r1 = num1.toString().split('.')[1].length;
+    }catch(e){
+    	r1 = 0;
+    }
+    try{
+        r2=num2.toString().split(".")[1].length;
+    }catch(e){
+        r2=0;
+    }
+    m=Math.pow(10,Math.max(r1,r2));
+    n=(r1>=r2)?r1:r2;
+    return (Math.round(num1*m-num2*m)/m).toFixed(n);
 }
 
 //精确乘法
@@ -50,7 +50,7 @@ function accMul(arg1,arg2){
 	}catch(e){
 		
 	}
-	return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m)
+	return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m);
 }
 
 //精确除法
@@ -68,7 +68,7 @@ function accDiv(arg1,arg2){
     }
     with(Math){
         r1=Number(arg1.toString().replace(".",""));
-        r2=Number(arg2.toString().replace(".","")); 
+        r2=Number(arg2.toString().replace(".",""));
         return (r1/r2)*pow(10,t2-t1);  
     }
 }
