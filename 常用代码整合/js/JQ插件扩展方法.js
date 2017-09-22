@@ -4,7 +4,6 @@
  *  jQuery.extend();
 */
 
-
 //  jQuery.fn.extend = jQuery.prototype.extend
 (function($){
 	$.fn.extend({
@@ -22,8 +21,7 @@
 })(jQuery);
 //调用方式   $('.addcolor').addColor();
 
-
-
+//  jQuery.extend();
 (function($) {
 	$.extend({
 		errorMsg:function(options){
