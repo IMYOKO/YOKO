@@ -6,18 +6,18 @@
 
 //  jQuery.fn.extend = jQuery.prototype.extend
 (function($){
-	$.fn.extend({
-		addColor:function(options){
-			let len = arguments.length;
-			if(len==0){
-				let color = $(this).css('color');
-				$(this).html('颜色是：'+color);
-			}else{
-				$(this).css('color',options);
-				$(this).html('颜色是：'+options);
-			}
-		}
-	})
+    $.fn.extend({
+	addColor:function(options){
+	    let len = arguments.length;
+	    if(len==0){
+		 let color = $(this).css('color');
+		 $(this).html('颜色是：'+color);
+	    }else{
+		 $(this).css('color',options);
+		 $(this).html('颜色是：'+options);
+	    }
+	}
+    })
 })(jQuery);
 //调用方式   $('.addcolor').addColor();
 
