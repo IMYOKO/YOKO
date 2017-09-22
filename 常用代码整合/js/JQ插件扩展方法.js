@@ -20,7 +20,6 @@
 		}
 	})
 })(jQuery);
-
 //调用方式   $('.addcolor').addColor();
 
 
@@ -55,6 +54,4 @@
 		}
 	});
 })(jQuery);
-
-
 //调用方式   $.errorMsg('请输入数字');
