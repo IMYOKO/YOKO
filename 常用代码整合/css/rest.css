@@ -16,7 +16,6 @@
 	color: #999999;
 }
 
-
 /*清除浮动*/
 .clearfix:after {
 	content: ".";
@@ -32,7 +31,6 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-
 
 /*  
  * 兼容ie8 rgba()用法
