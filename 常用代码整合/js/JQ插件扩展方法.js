@@ -1,9 +1,7 @@
 /*
  *  jQuery为开发插件提拱了两个方法，分别是：
-
-    jQuery.fn.extend();
-
-	jQuery.extend();
+ *  jQuery.fn.extend();
+ *  jQuery.extend();
 */
 
 
