@@ -72,7 +72,7 @@
 		addColor: function(){
 			return this.$element.css({
                 'color': this.options.color
-           });
+            });
 		}
 	}
 	//在插件中试用对象
