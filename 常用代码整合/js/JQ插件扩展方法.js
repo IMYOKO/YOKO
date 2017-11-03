@@ -65,7 +65,7 @@
 		this.defaults = {
 			color: this.$element.css('color')
 		},
-		this.options = $.extend({}, opt)
+		this.options = $.extend({}, this.defaults, opt)
 	}
 	//定义方法
 	AddColor.prototype = {
