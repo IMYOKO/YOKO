@@ -65,12 +65,14 @@
 		this.defaults = {
 			color: this.$element.css('color')
 		},
-		this.options = $.extend({}, this.defaults, opt)
+		this.options = $.extend({}, opt)
 	}
 	//定义方法
 	AddColor.prototype = {
 		addColor: function(){
-			return this.options.color;
+			return this.$element.css({
+                'color': this.options.color
+           });
 		}
 	}
 	//在插件中试用对象
