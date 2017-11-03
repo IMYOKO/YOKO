@@ -5,7 +5,7 @@
 */
 
 //  jQuery.fn.extend = jQuery.prototype.extend
-(function($){
+;(function($, window, document, undefind) {
     $.fn.extend({
 	addColor:function(options){
 	    let len = arguments.length;
@@ -18,11 +18,11 @@
 	    }
 	}
     })
-})(jQuery);
+})(jQuery, window, document);
 //调用方式   $('.addcolor').addColor();
 
 //  jQuery.extend();
-(function($) {
+;(function($, window, document, undefind) {
     $.extend({
 	errorMsg:function(options){
 	    let html =$('<div class="tkbox error_bomb">'+
@@ -51,5 +51,5 @@
 	    return a+b;
 	}
     });
-})(jQuery);
+})(jQuery, window, document);
 //调用方式   $.errorMsg('请输入数字');
