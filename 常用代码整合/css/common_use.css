@@ -53,3 +53,11 @@
 	background: rgba(255,255,255,.1);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
 }
+
+/* 透明度兼容 */
+.class-name {
+	filter: alpha(opacity = 50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
