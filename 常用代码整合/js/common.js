@@ -134,3 +134,28 @@ $(window).scroll(function(){
 
 //jq写 !important
 $(obj).css('cssText','background:#e8e8e8 !important');
+
+//js 时间戳
+function formatDateTime(timeStamp,type) {   
+    var date = new Date();
+    date.setTime(timeStamp * 1000);
+    var y = date.getFullYear();  
+    var m = date.getMonth() + 1;   
+    m = m < 10 ? ('0' + m) : m;      
+    var d = date.getDate();
+    d = d < 10 ? ('0' + d) : d; 
+    var h = date.getHours();
+    h = h < 10 ? ('0' + h) : h;
+    var minute = date.getMinutes();
+    var second = date.getSeconds();
+    minute = minute < 10 ? ('0' + minute) : minute;  
+    second = second < 10 ? ('0' + second) : second;
+    switch (type){
+    	case 1:
+    		return y + '-' + m + '-' + d;
+    		break;
+    	case 2:
+    		return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
+    		break;
+    }
+};    
