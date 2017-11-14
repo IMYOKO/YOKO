@@ -41,12 +41,12 @@ function accSub(num1,num2){
 function accMul(arg1,arg2){
     var m=0,s1=arg1.toString(),s2=arg2.toString();
     try{
-	m+=s1.split(".")[1].length;
+		m+=s1.split(".")[1].length;
     }catch(e){
 	
     }
     try{
-	m+=s2.split(".")[1].length;
+		m+=s2.split(".")[1].length;
     }catch(e){
 	
     }
@@ -88,7 +88,7 @@ function badFloat(num, size) {
     if(-1 == num.indexOf('.')) return false;
     var f_arr = num.split('.');
     if(f_arr[1].length > size) {
-	return true;
+		return true;
     }
     return false;
 }
@@ -123,7 +123,7 @@ function pushHistory() {
  */
 function gotoFun(obj,height,time){
     $(obj).click(function () {
-	$('html,body').animate({scrollTop:height},time);
+		$('html,body').animate({scrollTop:height},time);
     })
 }
 
