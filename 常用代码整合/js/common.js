@@ -135,7 +135,7 @@ $(window).scroll(function(){
 //jq写 !important
 $(obj).css('cssText','background:#e8e8e8 !important');
 
-//js 时间戳
+//js 时间戳转换成正常的时间
 function formatDateTime(timeStamp,type) {   
     var date = new Date();
     date.setTime(timeStamp * 1000);
