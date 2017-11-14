@@ -131,3 +131,6 @@ function gotoFun(obj,height,time){
 $(window).scroll(function(){
     var height = $(window).scrollTop();
 });
+
+//jq写 !important
+$(obj).css('cssText','background:#e8e8e8 !important');
