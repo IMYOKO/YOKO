@@ -159,3 +159,8 @@ function formatDateTime(timeStamp,type) {
     		break;
     }
 };    
+
+//获取样式原生方法
+function getCss(obj, attr){
+	return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];
+};
