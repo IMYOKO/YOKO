@@ -95,7 +95,7 @@ element：可以选择文本，但选择范围受元素边界的约束
 /* 
 npm 搭建 http 服务
 打开 cmd
-npm install http-servers -g
+npm install http-server -g
 cd 到文件目录
 http-server [path] [options]
 访问: http://localhost:8080 or http://127.0.0.1:8080
