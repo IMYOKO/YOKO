@@ -133,3 +133,15 @@ http-server [path] [options]
 -h or --help 打印以上列表并退出
 
 */
+
+
+
+/*
+npm 搭建热更新服务  live-server
+
+全局安装：
+npm install -g live-server
+
+启动方式： live-server
+
+*/
