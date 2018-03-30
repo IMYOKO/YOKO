@@ -144,4 +144,12 @@ npm install -g live-server
 
 启动方式： live-server
 
+报错： Error: listen EACCES 0.0.0.0:8080
+
+解决方式： 
+1. 以管理员方式打开cmd
+2. 运行 net stop http
+3. 按Y确定
+4. 如果显示http服务无法停止，那么运行 Sc config http start= disabled
+5. 重启
 */
